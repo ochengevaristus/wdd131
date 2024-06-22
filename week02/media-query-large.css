@@ -1,0 +1,10 @@
+/* Media query for larger viewports */
+header {
+    background-color: black;
+    color: white;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}

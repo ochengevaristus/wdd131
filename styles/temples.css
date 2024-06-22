@@ -1,0 +1,102 @@
+/* Mobile first styles */
+body {
+    font-family: 'Your Font Choice', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background-color: #333;
+    color: #fff;
+}
+
+nav {
+    position: relative;
+}
+
+nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+nav ul li {
+    text-align: center;
+}
+
+nav ul li a {
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+    color: #fff;
+}
+
+#hamburger-menu {
+    font-size: 2em;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+}
+
+figure {
+    margin: 0;
+    overflow: hidden;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+figcaption {
+    text-align: center;
+    font-style: italic;
+    padding: 0.5em;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #333;
+    color: #fff;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+nav ul.show {
+    display: flex;
+}
+
+
+nav ul li a:hover {
+    background-color: #555;
+}

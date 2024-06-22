@@ -1,0 +1,25 @@
+/* Larger view styles */
+@media (min-width: 768px) {
+    header {
+        justify-content: space-between;
+        padding: 0.5em 2em;
+    }
+
+    nav ul {
+        display: flex;
+        position: static;
+        flex-direction: row;
+    }
+
+    nav ul li a {
+        padding: 0.5em 1em;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #hamburger-menu {
+        display: none;
+    }
+}
