@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review Form</h1>
+    </header>
+    <main>
+        <form id="reviewForm" action="review.html" method="get">
+            <label for="productName">Product Name</label>
+            <select id="productName" name="productName" required>
+                <option value="" disabled selected>Select a Product...</option>
+            </select>
+
+            <fieldset>
+                <legend>Overall Rating</legend>
+                <input type="radio" id="star1" name="rating" value="1" required>
+                <label for="star1">☆</label>
+                <input type="radio" id="star2" name="rating" value="2">
+                <label for="star2">☆☆</label>
+                <input type="radio" id="star3" name="rating" value="3">
+                <label for="star3">☆☆☆</label>
+                <input type="radio" id="star4" name="rating" value="4">
+                <label for="star4">☆☆☆☆</label>
+                <input type="radio" id="star5" name="rating" value="5">
+                <label for="star5">☆☆☆☆☆</label>
+            </fieldset>
+
+            <label for="installationDate">Date of Installation</label>
+            <input type="date" id="installationDate" name="installationDate" required>
+
+            <fieldset>
+                <legend>Useful Features</legend>
+                <input type="checkbox" id="feature1" name="features" value="Durabilty">
+                <label for="feature1">Durabilty</label>
+                <input type="checkbox" id="feature2" name="features" value="Ease of use">
+                <label for="feature2">Ease of use</label>
+                <input type="checkbox" id="feature3" name="features" value="Perfomance">
+                <label for="feature3">Perfomancet</label>
+                <input type="checkbox" id="feature3" name="features" value="design">
+                <label for="feature3">Design</label>
+            </fieldset>
+
+            <label for="review">Written Review</label>
+            <textarea id="review" name="review"></textarea>
+
+            <label for="userName">User Name</label>
+            <input type="text" id="userName" name="userName">
+
+            <input type="submit" value="Submit Review">
+        </form>
+    </main>
+    <footer>
+        <p>Modified for WDD 131 assignment. &copy; <span id="year"></span> Your Name</p>
+    </footer>
+    <script src="form.js"></script>
+</body>
+</html>
