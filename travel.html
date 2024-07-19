@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to my personal travel blog where I share my travel experiences and tips.">
+    <title>Home - Personal Travel Blog</title>
+    <style>
+        /* Inline CSS */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 2rem;
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        h2, h3 {
+            font-size: 1.5rem;
+            margin-top: 0;
+        }
+
+        article {
+            margin-bottom: 1.5rem;
+        }
+
+        article h4 {
+            font-size: 1.1rem;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        form {
+            margin-top: 1rem;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        form input[type="email"] {
+            padding: 0.5rem;
+            font-size: 1rem;
+            width: 100%;
+            max-width: 400px;
+            margin-bottom: 0.5rem;
+            border: 1px solid #ccc;
+        }
+
+        form button {
+            background: #007bff;
+            border: none;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background: #0056b3;
+        }
+
+        footer {
+            background: #f1f1f1;
+            text-align: center;
+            padding: 1rem;
+            border-top: 1px solid #ddd;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+            img {
+    width: 100px; 
+    height: 200px;
+    border-radius: 4px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    margin-bottom: 1rem; 
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Personal Travel Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="travel-tips.html">Travel Tips</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="intro">
+            <h2>Welcome to My Travel Blog</h2>
+            <img src="images/WhatsApp Image 2024-05-20 at 7.42.34 PM.jpeg" alt="Travel photo">
+            <p>Hello! I'm Evaristus Ochieng , and I love to travel. This blog is where I share my adventures, travel tips, and insights. Explore my latest posts and discover new destinations.</p>
+        </section>
+        <section id="recent-posts">
+            <h3>Recent Posts</h3>
+            <article>
+                <h4>Exploring the Hidden Gems of Paris</h4>
+                <p>Paris is more than just the Eiffel Tower. Discover its hidden gems and local secrets.</p>
+                <a href="https://parisjetaime.com/eng/">Read more</a>
+            </article>
+            <article>
+                <h4>A Guide to Budget Travel in Asia</h4>
+                <p>Traveling Asia on a budget is possible. Here's how you can do it.</p>
+                <a href="https://travel.usnews.com/rankings/best-asian-vacations/">Read more</a>
+            </article>
+        </section>
+        <section id="about">
+            <h3>About Me</h3>
+            <p>I'm Evaristus Ochieng, a passionate traveler and adventurer. Through this blog, I aim to inspire others to explore the world and share my personal travel tips and experiences. Whether you're looking for travel guides, budget tips, or inspiration for your next trip, you'll find it all here.</p>
+        </section>
+        <section id="newsletter">
+            <h3>Subscribe to My Newsletter</h3>
+            <p>Stay updated with my latest travel posts and tips by subscribing to my newsletter.</p>
+            <form action="thank-you.html" method="get">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Personal Travel Blog</p>
+        <a href="attribution.html">Attributions</a>
+    </footer>
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Home page loaded.');
+        });
+
+    
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
